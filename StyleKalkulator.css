@@ -1,0 +1,31 @@
+#calculator {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width: 50px;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+}
+
+.btn.sign {
+  background-color: #E1C9E8; /*#FFAC88;*/
+}
+
+#equals {
+  background-color: #C9FFF4; /*#0DFFCE;*/
+}
+
+#screen {
+  width: 207px;
+  padding: 10px;
+  text-align: right;
+}
+
+#footer{
+    font-size: 0.75em;
+    margin: 50px 0px 0px 0px;
+    font-family:"Book Antiqua", Palatino, serif;
+}

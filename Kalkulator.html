@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="StyleKalkulator.css">
+    <script type="text/javascript" src="Operacije.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+<div id="calculator">
+    <input id="screen" readonly value="0" maxlength="10"></br>
+    <button class="btn" OnClick="erase()">C</button>
+    <button class="btn" value="-" OnClick="abso()">±</button>
+    <button class="btn" value="(" OnClick="show(value)">(</button>
+    <button class="btn" value=")" OnClick="show(value)">)</button></br>
+    <button class="btn" value="7" OnClick="show(value)">7</button>
+    <button class="btn" value="8" OnClick="show(value)">8</button>
+    <button class="btn" value="9" OnClick="show(value)">9</button>
+    <button class="btn sign" value="deljeno" OnClick="calculate(value)">÷</button></br>
+    <button class="btn" value="4" OnClick="show(value)">4</button>
+    <button class="btn" value="5" OnClick="show(value)">5</button>
+    <button class="btn" value="6" OnClick="show(value)">6</button>
+    <button class="btn sign" value="krat" OnClick="calculate(value)">x</button></br>
+    <button class="btn" value="1" OnClick="show(value)">1</button>
+    <button class="btn" value="2" OnClick="show(value)">2</button>
+    <button class="btn" value="3" OnClick="show(value)">3</button>
+    <button class="btn sign" value="minus" OnClick="calculate(value)">-</button></br>
+    <button class="btn" value="0" OnClick="show(value)">0</button>
+    <button class="btn" value="." OnClick="addComma()">.</button>
+    <button class="btn" id="equals" value="equals" OnClick="calculate(value)">=</button>
+    <button class="btn sign" value="plus" OnClick="calculate(value)">+</button>
+  <div>
+    <p style="color: white" id = 'footer'>&copy;2018 Coded by fiore.drb</p>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
