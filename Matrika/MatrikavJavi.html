@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Tabela Gumbov</title>
+<head>
+<meta charset="utf-8">
+<style>
+</style>
+<script>
+
+
+  function tableCreate() {
+    var color =["red","blue","yellow","green","orange","violet","slateblue"] ;
+    var body = document.getElementsByTagName('body')[0];
+    var tbl = document.createElement('table');
+    tbl.setAttribute("style","width:0px;height:0px;");
+    tbl.setAttribute('border', '0');
+    var tbdy = document.createElement('tbody');
+    for (var i = 0; i < 10; i++) {
+        var tr = document.createElement('tr');
+        for (var j = 0; j < 10; j++) {
+                var td = document.createElement('td');
+                tr.appendChild(td);
+
+                var button = document.createElement('button');
+			    button.setAttribute("style","width:40px;height:40px;");
+			    button.onclick = function (event){
+			    var stevec = this.innerHTML;
+			    stevec++;
+			    this.innerHTML=stevec;
+			    var r=stevec%7;
+			    this.style.background = color[r];
+			    };
+			    
+                td.appendChild(button);
+        }
+        tbdy.appendChild(tr);
+    }
+    tbl.appendChild(tbdy);
+    body.appendChild(tbl)
+}
+window.onload=tableCreate;
+
+
+
+</script>
+</head>
+<body>
+  <div id="myTable"></div>
+</body>
+</html>
